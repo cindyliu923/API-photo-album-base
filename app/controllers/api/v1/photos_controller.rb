@@ -13,7 +13,7 @@ class Api::V1::PhotosController < ApiController
   end
 
   def show
-    @photo = Photo.find_by(params[:id])
+    @photo = Photo.find_by(id: params[:id])
     if !@photo
       render json: {
         message: "Can't find the photo!",
