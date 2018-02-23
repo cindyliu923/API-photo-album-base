@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'rest-client'
 gem 'carrierwave'
 gem 'devise'
+gem 'omniauth-facebook'
+
 
 group :production do
   gem 'pg'
